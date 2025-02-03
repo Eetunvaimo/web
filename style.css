@@ -554,6 +554,10 @@ body.nav-active .nav__list-item:nth-child(10) {
 #slide3 {
     background-color: rgb(0, 0, 0);
     transition: background-color 0.5s ease;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
