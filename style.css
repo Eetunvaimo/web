@@ -812,7 +812,7 @@ opacity: 1;
 @media (max-width: 400px) {
     .slide2-description { font-size: 1.2rem; top: 50%; left: 50%; width: 90%; }
     .tekija { font-size: 1rem; top: 110%; left: 50%; }
-    .tekija-tieto { font-size: 0.8rem; padding: 20px; top: 145%; width: 90%; left: 50%; }
+    .tekija-tieto { font-size: 0.8rem; padding: 20px; top: 185%; width: 90%; left: 50%; }
     .lopot { top: 200%; left: 50%; width: 90%; }
     .fotter { top: 215%; width: 100%;left: 50%; }
     h1 { font-size: 3rem; top: 30%; left: 50%; }
