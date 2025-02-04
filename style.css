@@ -808,26 +808,6 @@ opacity: 1;
 }
 
 
-/* Erittäin pienet laitteet (max 400px) */
-@media (max-width: 400px) {
-    .slide2-description { font-size: 1.2rem; top: 50%; left: 50%; width: 90%; }
-    .tekija { font-size: 1rem; top: 110%; left: 50%; }
-    .tekija-tieto { font-size: 0.8rem; padding: 20px; top: 185%; width: 90%; left: 50%; }
-    .lopot { top: 200%; left: 50%; width: 90%; }
-    .fotter { top: 215%; width: 100%;left: 50%; }
-    h1 { font-size: 3rem; top: 30%; left: 50%; }
-    p { font-size: 1.2rem; top: 50%; left: 50%;}
-    .nav-but-wrap{ 
-        position: absolute;
-        display: inline-block;
-        float: right;
-        padding-left: 36%;
-        padding-top: 8%;
-        margin-top: 26px;
-        transition : all 0.3s ease-out;
-    }
-
-}
 
 /* Pienet laitteet (puhelimet, max 600px) */
 @media (max-width: 600px) {
@@ -883,3 +863,25 @@ opacity: 1;
     h1 { font-size: clamp(9rem, 4vw, 8rem); top: 30%; left: 50%; }
     p { font-size: 3.5rem; top: 55%; left: 50%; }
 }
+
+/* Erittäin pienet laitteet (max 400px) */
+@media (max-width: 400px) {
+    .slide2-description { font-size: 1.2rem; top: 50%; left: 50%; width: 90%; }
+    .tekija { font-size: 1rem; top: 110%; left: 50%; }
+    .tekija-tieto { font-size: 0.8rem; padding: 20px; top: 185%; width: 90%; left: 50%; }
+    .lopot { top: 200%; left: 50%; width: 90%; }
+    .fotter { top: 215%; width: 100%;left: 50%; }
+    h1 { font-size: 3rem; top: 30%; left: 50%; }
+    p { font-size: 1.2rem; top: 50%; left: 50%;}
+    .nav-but-wrap{ 
+        position: absolute;
+        display: inline-block;
+        float: right;
+        padding-left: 36%;
+        padding-top: 8%;
+        margin-top: 26px;
+        transition : all 0.3s ease-out;
+    }
+
+}
+
