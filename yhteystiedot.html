@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yhteystiedot</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icomoon/2.0.0/style.css">
 </head>
 <body>
+
+    <!-- Logo -->
+    <div class="logo">Web<span>mylly</span></div>
+
+    <header class="cd-header">
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>          
+        </div>          
+    </header>
+  
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Koti</a></li>
+                <li class="nav__list-item"><a href="palvelut.html" class="hover-target">Palvelut</a></li>
+                <li class="nav__list-item"><a href="yhteystiedot.html" class="hover-target">Yhteystiedot</a></li>
+            </ul>
+        </div>
+    </div>    
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+
+    <div class="teksti">
+        <h1>Ota yhteyttä</h1>
+        <p>Jos sinulla herää minkäänlaista kysyttävää tai ehdotuksia, niin ole yhteydessä viereisellä lomakkeella! <br>Palvelut löydät <a href="palvelut.html">täältä</a></p>
+    </div>
+
+    <div class="lomake">
+        <h1>Ota yhteyttä</h1>
+        <form action="form.php" method="post">
+            <label for="nimi">Nimi</label>
+            <input type="text" id="nimi" name="nimi" required>
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" required>
+            <label for="viesti">Viesti</label>
+            <textarea id="viesti" name="viesti" required></textarea>
+            <input type="submit" value="Lähetä">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p><a href="index.html">WebMylly</a><br> <br>
+        <a href="mailto:webmyllym@gmail.com">webmyllym@gmail.com</a> <br> <br>
+        <a href="tel:040-7681059" onclick="copyToClipboard('040-7681059')">040-7681059</a> <br> <br> 
+        <span class="dancing-script">Veeti Myllymäki</span> <br> <br></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
     
 </body>
 </html>

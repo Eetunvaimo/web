@@ -3,89 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebMylly</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icomoon/2.0.0/style.css">
+    <title>Palvelut</title>
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
 
+    <!-- Logo -->
+    <div class="logo">Web<span>mylly</span></div>
 
-    <!--eka slide-->
-    <div class="slide" id="slide1">
-        <header class="cd-header">
-            <div class="nav-but-wrap">
-                <div class="menu-icon hover-target">
-                    <span class="menu-icon__line menu-icon__line-left"></span>
-                    <span class="menu-icon__line"></span>
-                    <span class="menu-icon__line menu-icon__line-right"></span>
-                </div>          
+    <header class="cd-header">
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
             </div>          
-        </header>
-      
-        <div class="nav">
-            <div class="nav__content">
-                <ul class="nav__list">
-                    <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Koti</a></li>
-                    <li class="nav__list-item"><a href="palvelut.html" class="hover-target">Palvelut</a></li>
-                    <li class="nav__list-item"><a href="yhteystiedot.html" class="hover-target">Yhteystiedot</a></li>
+        </div>          
+    </header>
+  
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Koti</a></li>
+                <li class="nav__list-item"><a href="palvelut.html" class="hover-target">Palvelut</a></li>
+                <li class="nav__list-item"><a href="yhteystiedot.html" class="hover-target">Yhteystiedot</a></li>
+            </ul>
+        </div>
+    </div>  
+    
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+
+    <section id="palvelut">
+        <h1>Palvelut ja hinnasto</h1>
+        <div class="main">        
+            <h3 class="o1">Verkkosivut</h3>
+            <ul class="l1">
+                <li>Pieni nettisivu (1 sivu) – <strong>245 €</strong></li><br>
+                <li>Keskisuuri nettisivu (4 sivua) – <strong>350 €</strong></li><br>
+                <li>Suuri nettisivu (4+ sivua) – alk. <strong>400 €</strong></li><br>
+                <li>Valmiiden sivujen muokkaus ja parantelu – alk. <strong>50 €</strong></li><br>
+                <li>Ylläpito – alk. <strong>28 €/kk</strong></li>
+            </ul>
+            <h3 class="o2">Kaikkiin paketteihin sisältyy:</h3>
+            <ul class="l1">
+                <li>Lähetyslomakkeet ja tietokannat</li><br>
+                <li>Räätälöinti toiveidesi mukaan</li><br>
+                <li>Domain (halutessasi)</li><br>
+                <li>Mahdollisuus saada sivusto joko koodina tai julkaistuna ja valtuutettuna</li>
+            </ul>
+        </div>
+
+        <div class="info">
+            <h3 class="o1">Tietoa palveluista</h3>
+            <ul class="l1">
+                <li><strong>Pieni nettisivu</strong> – Sisältää yhden sivun (etusivu)</li><br>
+                <li><strong>Keskisuuri nettisivu</strong> – Sisältää etusivun ja 3 alasivua</li><br>
+                <li><strong>Suuri nettisivu</strong> – Sisältää etusivun ja vähintään 4 alasivua</li><br>
+                <li><strong>Muokkaus ja parantelu</strong>  – Voit päivittää tai parantaa valmiita sivujasi</li>
+            </ul>
+        </div>
+
+        <div class="order-form">
+            <h2>Tilaa</h2>
+            <form>
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Puhelinnumero:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="service">Valitse palvelu:</label>
+                <select id="service" name="service" required>
+                    <option value="pieni-nettisivu">Pieni nettisivu</option>
+                    <option value="keskisuuri-nettisivu">Keskisuuri nettisivu</option>
+                    <option value="suuri-nettisivu">Suuri nettisivu</option>
+                    <option value="muokkaus-parantelu">Muokkaus ja parantelu</option>
+                    <option value="ylläpito">Ylläpito</option>
+                </select>
+
+                <label for="message">Lisätiedot (valinnainen):</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Lähetä</button>
+            </form>
+        </div>
+
+
+
+        <div id="popup1" class="popup1">
+            <div class="popup-content1">
+                <span class="close-popup-btn1" onclick="closePopup1()">&times;</span>
+                <h3 class="menus">Usein kysytyt kysymykset (FAQ)</h3>
+                <ul>
+                    <li><strong>Kuinka kauan verkkosivujen toteutus kestää?</strong> – Yleensä 1–4 viikkoa.</li><br>
+                    <li><strong>Mitä tarvitsen ennen kuin voimme aloittaa?</strong> – Perustiedot yrityksestäsi, sivuston rakenne ja materiaalit.</li><br>
+                    <li><strong>Voinko päivittää sivustoani itse?</strong> – Kyllä, voit tehdä sen itse tai pyytää meiltä päivityksiä.</li><br>
+                    <li><strong>Mitä jos haluan muuttaa jotain myöhemmin?</strong> – Muutokset onnistuvat kertakorvauksella tai ylläpidon yhteydessä.</li>
                 </ul>
             </div>
-        </div>    
-    
-        <div class='cursor' id="cursor"></div>
-        <div class='cursor2' id="cursor2"></div>
-        <div class='cursor3' id="cursor3"></div>
-    
-        <div class="midsec">
-            <h1>Kotisivut ja verkkokaupat</h1>
-            <p>-Tehdään verkkosivut, jotka palvelevat tarpeitasi – nopeasti ja vaivattomasti.-</p>
         </div>
-    </div>
-    
-    <!-- Toinen slide -->
-    <div class="slide" id="slide2">
-        <div class="arrow-left">&#9664;</div>
-        <div class="arrow-right">&#9654;</div>
-        <div class="slide2-content hidden">
-            <h3>Hinnasto</h3>
-            <p>Text for the first content.</p>
-        </div>
-        <div class="slide2-content">
-            <h3>Tietoa Verkkosivuista</h3>
-            <ul>
-                <li><b>Täydellinen räätälöinti:</b> Jokainen verkkosivusto suunnitellaan ja toteutetaan yksilöllisesti.</li>
-                <li><b>Helppokäyttöisyys ja skaalautuvuus:</b> Sivustot ovat helppokäyttöisiä ja mukautuvat tarpeidesi mukaan.</li>
-                <li><b>Responsiivisuus ja nopeus:</b> Sivustot optimoidaan eri laitteille ja selaimille.</li>
-                <li><b>Hakukoneoptimointi (SEO):</b> Autan sivustosi näkymään hakukoneissa oikealla tavalla.</li>
-                <li><b>Turvallisuus ja luotettavuus:</b> Huolehdin sivustosi turvallisuudesta ja suojauksesta.</li>
-            </ul>
-            <p class="ending">Ota yhteyttä ja aloitetaan yhdessä projekti, joka vie liiketoimintasi uudelle tasolle!</p>
-        </div>
-        <div class="slide2-content hidden">
-            <h3>Usein kysyttyä</h3>
-            <p>Text for the third content.</p>
-        </div>
-    </div>
-    
-    <!-- Kolmas slide -->
-    <div class="slide" id="slide3">
-        <h2 class="lopot">WebMylly</h2>
-        <footer class="fotter">
-            © 2025 WebMylly. Kaikki oikeudet pidätetään
-        </footer>
-    </div>
 
+        <div id="popup2" class="popup2">
+            <div class="popup-content2">
+                <span class="close-popup-btn2" onclick="closePopup2()">&times;</span>
+                <h3 class="menus">Toimitusvaihtoehdot</h3>
+                <ul>
+                    <li>-Luovutan sivuston koodina</li><br>
+                    <li>-Julkaisen sivuston puolestasi ja luovutan hallintaoikeudet</li><br>
+                    <li>-Aloitetaan jatkuva ylläpito</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<!--RULLAUS-->
+    <footer class="footer">
+        <p>
+            <a href="index.html">WebMylly</a><br>
+            <a href="mailto:webmyllym@gmail.com">webmyllym@gmail.com</a><br>
+            <a href="tel:040-7681059" onclick="copyToClipboard('040-7681059')">040-7681059</a><br>
+            <span class="dancing-script">Veeti Myllymäki</span>
+            <div class="footer-buttons">
+                <button class="open-popup-btn1" onclick="openPopup1()">Usein kysyttyä</button>
+                <button class="open-popup-btn2" onclick="openPopup2()">Toimitusvaihtoehdot</button>
+            </div>
+        </p>
+    </footer>
 
-<div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-    </svg>
-</div>
-    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="script2.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
